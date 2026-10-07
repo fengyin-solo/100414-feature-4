@@ -30,6 +30,8 @@ export type PageResult = {
 export type ActionResult = {
   ok: boolean
   message: string
+  // 结束供电确认断电后，同步释放的地勤排班待办条数
+  releasedTodos?: number
 }
 
 export type OverviewResult = {
